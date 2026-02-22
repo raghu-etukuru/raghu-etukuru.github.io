@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghurami Etukuru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --bg-main: #fdfdf9;
+            --accent: #2c5f8d;
+            --border: #d4d4d0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 30px;
+        }
+
+        header {
+            margin-bottom: 60px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+
+        .bio {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .publication-list,
+        .book-list {
+            list-style: none;
+        }
+
+        .publication-item,
+        .book-item {
+            margin-bottom: 24px;
+            padding-left: 0;
+        }
+
+        .publication-title,
+        .book-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .publication-title a,
+        .book-title a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s ease;
+        }
+
+        .publication-title a:hover,
+        .book-title a:hover {
+            border-bottom: 1px solid var(--accent);
+        }
+
+        .publication-meta,
+        .book-meta {
+            color: var(--text-secondary);
+            font-size: 0.95em;
+            font-style: italic;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.9em;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s ease;
+        }
+
+        .contact-links a:hover {
+            border-bottom: 1px solid var(--accent);
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            body {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Raghurami Etukuru</h1>
+            <p class="subtitle">Researcher & Author</p>
+        </header>
+
+        <section id="about">
+            <h2>About</h2>
+            <p class="bio">
+                [Add your bio here. Include your background, current position, research interests, 
+                and any other relevant information about your professional journey.]
+            </p>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul class="publication-list">
+                <li class="publication-item">
+                    <div class="publication-title">
+                        <a href="#">[Publication Title]</a>
+                    </div>
+                    <div class="publication-meta">[Journal/Conference Name, Year]</div>
+                </li>
+                <li class="publication-item">
+                    <div class="publication-title">
+                        <a href="#">[Publication Title]</a>
+                    </div>
+                    <div class="publication-meta">[Journal/Conference Name, Year]</div>
+                </li>
+                <li class="publication-item">
+                    <div class="publication-title">
+                        <a href="#">[Publication Title]</a>
+                    </div>
+                    <div class="publication-meta">[Journal/Conference Name, Year]</div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="books">
+            <h2>Books</h2>
+            <ul class="book-list">
+                <li class="book-item">
+                    <div class="book-title">
+                        <a href="#">[Book Title]</a>
+                    </div>
+                    <div class="book-meta">[Publisher, Year]</div>
+                </li>
+                <li class="book-item">
+                    <div class="book-title">
+                        <a href="#">[Book Title]</a>
+                    </div>
+                    <div class="book-meta">[Publisher, Year]</div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com">Email</a>
+                <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com/raghu-etukuru" target="_blank">GitHub</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Raghurami Etukuru. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
