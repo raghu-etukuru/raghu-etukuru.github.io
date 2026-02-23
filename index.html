@@ -11,7 +11,7 @@
         :root {
             --text-primary: #1a1a1a;
             --text-secondary: #4a4a4a;
-            --bg-main: #fdfdf9;
+            --bg-main: #ffffff;
             --accent: #2c5f8d;
             --border: #d4d4d0;
         }
@@ -111,6 +111,17 @@
             font-style: italic;
         }
 
+        .publication-meta a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s ease;
+        }
+
+        .publication-meta a:hover {
+            border-bottom: 1px solid var(--accent);
+        }
+
         .contact-links {
             display: flex;
             flex-wrap: wrap;
@@ -167,7 +178,32 @@
         <section id="about">
             <h2>About Me</h2>
             <p class="bio">
-                I am an AI Systems Product Manager, Autonomous AI Researcher, and AI Systems Architect designing and scaling advanced AI systems and products. I specialize in architecting autonomous and multi-model AI systems that integrate rigorous research, systems engineering, and product strategy.
+                I am an Autonomous AI Researcher, AI Systems Architect, and Research Leader designing and scaling advanced AI systems and products. I specialize in architecting autonomous and multi-model AI systems that integrate rigorous research, systems engineering, and product strategy. My work bridges data science, software architecture, and business execution to deliver scalable AI solutions with measurable impact and reliable AI-driven operations.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul class="publication-list">
+                <li class="publication-item">
+                    <div class="publication-title">Ph.D., Data Science</div>
+                    <div class="publication-meta">National University, San Diego, 2020-2023</div>
+                </li>
+                <li class="publication-item">
+                    <div class="publication-title">MBA</div>
+                    <div class="publication-meta">New York Institute of Technology, New York, 2006-2008</div>
+                </li>
+                <li class="publication-item">
+                    <div class="publication-title">B.Tech., Electronics & Communication Engineering</div>
+                    <div class="publication-meta">Sri Venkateshwara University, India, 1990-1994</div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <p class="bio">
+                Over 25 years spanning Silicon Valley startups and Wall Street financial institutions, progressing from software engineering to AI product leadership and research. Architected enterprise-scale data-driven and model-driven platforms at Wells Fargo, Bank of America, Credit Suisse, and MUFG, delivering advanced analytics, predictive systems, and decision-intelligence solutions. Led development of AI-powered products integrating machine learning, deep learning, and reinforcement learning to drive measurable business impact across complex operational environments. Founded AISciences.ai to advance autonomous AI systems and scalable generative AI frameworks. Published research on complexity-conscious prediction modeling and contributed thought leadership at the intersection of AI research and product innovation. Bridge technical depth in software architecture with strategic product management to deliver scalable solutions across data science, engineering, and business execution.
             </p>
         </section>
 
@@ -178,8 +214,7 @@
                     <div class="publication-title">
                         Enhancing Forecasting Accuracy through Artificial Intelligence-Driven Complexity-Conscious Prediction Modeling
                     </div>
-                    <div class="publication-meta">Journal of Advances in Artificial Intelligence (JAAI), 2024 </div>
-                    <div class="publication-meta"><a href="https://www.jaai.net/show-176-28-1.html">Paper</a></div>
+                    <div class="publication-meta">Journal of Advances in Artificial Intelligence (JAAI), 2024 · <a href="https://www.jaai.net/show-176-28-1.html">Paper</a></div>
                 </li>
             </ul>
         </section>
@@ -189,16 +224,17 @@
             <ul class="book-list">
                 <li class="book-item">
                     <div class="book-title">
-                        <a href="#">Consciousness in AI: Toward Conscious Machines (Publisher: iUniverse, 2025)</a>
+                        Consciousness in AI: Toward Conscious Machines
                     </div>
-                    <div class="book-meta">An interdisciplinary examination of whether machines and AI systems can achieve consciousness. Drawing on philosophy, neuroscience, cognitive science, quantum theory, Integrated Information Theory, and other theories, it explores the distinction between simulating consciousness and experiencing it—and how AI might one day become conscious, 
-though extensive discussion and research in this field is ongoing.</div>
+                    <div class="book-meta">iUniverse, 2025</div>
+                    <p class="bio">An interdisciplinary examination of whether machines and AI systems can achieve consciousness. Drawing on philosophy, neuroscience, cognitive science, quantum theory, Integrated Information Theory, and other theories, it explores the distinction between simulating consciousness and experiencing it—and how AI might one day become conscious, though extensive discussion and research in this field is ongoing.</p>
                 </li>
                 <li class="book-item">
                     <div class="book-title">
-                        <a href="#">Ai-driven Time Series Forecasting: Complexity-conscious Prediction and Decision-making (Publisher: iUniverse, 2023)</a>
+                        AI-driven Time Series Forecasting: Complexity-conscious Prediction and Decision-making
                     </div>
-                    <div class="book-meta">Time series data is characterized by complex patterns including non-linearity, non-stationarity, long memory, asymmetry, and stochasticity. Traditional mathematical and statistical models often fail to capture these intricacies. This book explores the multifaceted factors that generate such patterns and introduces Complexity-Conscious Prediction, a novel approach to forecasting that accounts for inherent data complexity. Beyond theory, it provides practical models with code for leveraging artificial intelligence to improve predictions in complex time series environments.</div>
+                    <div class="book-meta">iUniverse, 2023</div>
+                    <p class="bio">Time series data is characterized by complex patterns including non-linearity, non-stationarity, long memory, asymmetry, and stochasticity. Traditional mathematical and statistical models often fail to capture these intricacies. This book explores the multifaceted factors that generate such patterns and introduces Complexity-Conscious Prediction, a novel approach to forecasting that accounts for inherent data complexity. Beyond theory, it provides practical models with code for leveraging artificial intelligence to improve predictions in complex time series environments.</p>
                 </li>
             </ul>
         </section>
@@ -206,9 +242,9 @@ though extensive discussion and research in this field is ongoing.</div>
         <section id="contact">
             <h2>Contact</h2>
             <div class="contact-links">
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="mailto:retukuru@gmail.com">Email</a>
+                <a href="https://scholar.google.com/citations?user=Z744HfEAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
+                <a href="https://www.linkedin.com/in/raghuetukuru" target="_blank">LinkedIn</a>
                 <a href="https://github.com/raghu-etukuru" target="_blank">GitHub</a>
             </div>
         </section>
